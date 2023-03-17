@@ -1,0 +1,2 @@
+export const RESET_REDUX = 'RESET_REDUX';
+export const EMPTY_STORE_STATE = 'EMPTY_STORE_STATE';
