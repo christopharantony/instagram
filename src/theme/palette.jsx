@@ -31,13 +31,13 @@ const GREY = {
 };
 
 const primary = {
-  main: '#9e2f2a',
+  main: '#4cb5f9',
   light: '#ffe4e2',
-  arrow: '#d6313a'
+  arrow: '#d6313a',
 };
 
 const secondary = {
-  main: '#ececec'
+  main: '#ececec',
 };
 const info = {
   main: '#1890FF',

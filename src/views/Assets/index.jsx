@@ -6,7 +6,7 @@ function Assets() {
   console.log('assets');
   return (
     <div>
-      <h3> Assets </h3>
+      <h1 style={{ textAlign: 'center' }}> Assets </h1>
       <LandingPageImage />
     </div>
   );
