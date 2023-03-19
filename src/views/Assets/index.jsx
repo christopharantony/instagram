@@ -1,12 +1,13 @@
 /* eslint-disable no-console */
 import React from 'react';
+import LandingPageImage from './LandingPageImage';
 
 function Assets() {
   console.log('assets');
   return (
     <div>
-      <div> Assets </div>
-      <div>hai</div>
+      <h3> Assets </h3>
+      <LandingPageImage />
     </div>
   );
 }
