@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import img1 from '../../../assets/img/screenshot1-2x.png';
 import img2 from '../../../assets/img/screenshot2-2x.png';
 import img3 from '../../../assets/img/screenshot3-2x.png';
@@ -9,13 +9,36 @@ function LandingPageImage() {
   const classes = useStyles();
   const [index, setIndex] = useState(0);
   const images = [img1, img2, img3, img4];
-  setInterval(() => {
-    setIndex((prev) => (prev === 3 ? 0 : prev + 1));
-  }, 5000);
+
+  useEffect(() => {
+    let intervalFn;
+    intervalFn = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % 4);
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalFn);
+    };
+  }, []);
   return (
     <div className={classes?.root}>
       <div className={classes?.phone}>
-        <img className={classes?.image} src={images[index]} />
+        <img
+          className={index === 0 ? classes?.image : classes?.fade}
+          src={images[index]}
+        />
+        <img
+          className={index === 1 ? classes?.image : classes?.fade}
+          src={images[index]}
+        />
+        <img
+          className={index === 2 ? classes?.image : classes?.fade}
+          src={images[index]}
+        />
+        <img
+          className={index === 3 ? classes?.image : classes?.fade}
+          src={images[index]}
+        />
       </div>
     </div>
   );

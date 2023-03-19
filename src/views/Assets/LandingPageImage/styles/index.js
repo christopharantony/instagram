@@ -14,5 +14,10 @@ export const useStyles = makeStyles(() => ({
     position: 'absolute',
     top: '26px',
     right: '60px',
+    opacity: 1,
+    transition: 'opacity 2s ease-in-out',
+  },
+  fade: {
+    opacity: 0,
   },
 }));
