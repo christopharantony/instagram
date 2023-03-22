@@ -19,7 +19,7 @@ export const routes = [
     Component: Assets,
   },
   {
-    path: '/404',
+    path: '*',
     Component: NotFound,
   },
 ];

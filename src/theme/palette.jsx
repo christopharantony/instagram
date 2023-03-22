@@ -61,7 +61,7 @@ const error = {
 };
 
 const palette = {
-  common: { black: '#101010', white: '#fff' },
+  common: { black: '#000', white: '#fff' },
   primary: { ...primary },
   secondary: { ...secondary },
   info: { ...info },

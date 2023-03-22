@@ -1,0 +1,15 @@
+export const FooterItems = [
+    { name: "Meta", href: "#" },
+    { name: "About", href: "#" },
+    { name: "Blog", href: "#" },
+    { name: "Jobs", href: "#" },
+    { name: "Help", href: "#" },
+    { name: "API", href: "#" },
+    { name: "Privacy", href: "#" },
+    { name: "Terms", href: "#" },
+    { name: "Top Accounts", href: "#" },
+    { name: "Locations", href: "#" },
+    { name: "Instagram Lite", href: "#" },
+    { name: "Contact Uploading & Non-Users", href: "#" },
+    { name: "Meta Verified", href: "#" },
+  ]
