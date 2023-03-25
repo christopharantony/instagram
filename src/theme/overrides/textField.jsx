@@ -8,11 +8,13 @@ const textField = theme => {
         MuiInput: {
             styleOverrides: {
 
-            }
+            },
+            variants: [
+               
+              ],
         },
         MuiInputAdornment: {
             styleOverrides: {
-
             }
         }
     }

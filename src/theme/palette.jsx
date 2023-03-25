@@ -11,6 +11,7 @@ const GREY = {
   7: '#b4b4b4',
   8: '#b5b5b5',
   9: '#564f4f',
+  10: '#dfdfdf',
   100: '#F9FAFB',
   200: '#F4F6F8',
   300: '#DFE3E8',
@@ -82,6 +83,7 @@ const palette = {
     hoverOpacity: 0.08,
     disabledOpacity: 0.48,
   },
+  border: { base: GREY[10] },
 };
 
 export default palette;
